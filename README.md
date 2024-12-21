@@ -1,15 +1,11 @@
-Here’s a concise and clear README template for your repository. Feel free to adjust it as needed:
-
----
-
 # GCViT and Custom Model Repository
 
 This repository contains the training and testing code for the GCViT model, along with a checkpoint for reproducibility. Additionally, it includes a custom model tailored for specific use cases.
 
 ## Repository Structure
 
-- **`gcvit_training.py`**: Contains the training script for the GCViT model. Includes configuration for data loading, model initialization, and optimization.
-- **`gcvit_testing.py`**: Script to evaluate the GCViT model using test datasets. Outputs key metrics and predictions.
+- **`Train.py`**: Contains the training script for the GCViT model. Includes configuration for data loading, model initialization, and optimization.
+- **`Test.py`**: Script to evaluate the GCViT model using test datasets. Outputs key metrics and predictions.
 - **`checkpoint/`**: Directory containing pre-trained model weights to resume training or perform inference.
 - **`custom_model/`**: Code and configurations for a custom model, designed for advanced use cases.
 
@@ -24,16 +20,15 @@ pip install -r requirements.txt
 ### 2. Training the GCViT Model
 Run the training script:
 ```bash
-python gcvit_training.py --config config.yaml
+python Train.py 
 ```
-- Customize the training configuration in the `config.yaml` file.
 
 ### 3. Testing the GCViT Model
 Evaluate the model using the testing script:
 ```bash
-python gcvit_testing.py --checkpoint checkpoint/model.pth
+python Test.py 
 ```
-- Replace `model.pth` with the actual checkpoint filename.
+- Replace `model path` with the actual checkpoint filename.
 
 ### 4. Using the Custom Model
 Navigate to the `custom_model` directory for details on utilizing the custom model:
